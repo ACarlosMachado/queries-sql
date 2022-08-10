@@ -46,7 +46,7 @@ Após receber uma tabela não normalizada o objetivo deste projeto era normaliza
   <summary><strong>‼️ Para acessar o projeto na sua máquina</strong></summary><br />
 
 1. Clone o repositório
-  * `git clone git@github.com:ACarlosMachado/projeto-one-for-all.git`.
+  * `git clone git@github.com:ACarlosMachado/queries-sql.git`.
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd sd-018-a-mysql-one-for-all`
 
