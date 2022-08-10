@@ -1,41 +1,10 @@
-# Boas vindas ao repositório do projeto One For All!
-
-Para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo e, se tiver qualquer dúvida, nos envie por Slack! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um Pull Request para colocar seus códigos.
-
-# Termos e acordos
-
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Conduta e do Manual da Pessoa Estudante da Trybe.
-
-# Entregáveis
+## Olá, seja bem vindo!
+Este projeto foi desenvolvido durante o módulo de backend do curso de Desenvolvimento Web da Trybe.
 
 <details>
-  <summary><strong>🤷🏽‍♀️ Como entregar</strong></summary><br />
+  <summary><strong>👨‍💻 Objetivo do projeto:</strong></summary><br />
 
-Para entregar o seu projeto você deverá criar um Pull Request neste repositório.
-
-Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://app.betrybe.com/course/4d67f5b4-34a6-489f-a205-b6c7dc50fc16/) e nosso [Blog - Git & GitHub](https://blog.betrybe.com/tecnologia/git-e-github/) sempre que precisar!
-</details>
-
-<details>
-  <summary><strong>👨‍💻 O que deverá ser desenvolvido</strong></summary><br />
-
-Hoje, no projeto ***One For All***, você usará **uma** tabela para revisar e consolidar **todos** os principais conceitos vistos até o momento.
-
-Você receberá uma tabela não normalizada que deverá ser normalizada e populada para que você possa executar queries com o intuito de encontrar as informações solicitadas.
-
-## Desenvolvimento
-
-Normalize uma tabela na terceira forma normal e acesse as informações desta tabela através de `queries` utilizando `SQL`.
-
-</details>
-
-<details>
-  <summary><strong>🗓 Data de Entrega</strong></summary><br />
-
-  - Serão `2` dias de projeto.
-  - Data de entrega para avaliação final do projeto: `13/05/2022 14:00`.
+Após receber uma tabela não normalizada o objetivo deste projeto era normalizar, popular e acessar as informações desta tabela através de `queries` utilizando `SQL`.
 
 </details>
 
@@ -58,19 +27,9 @@ Normalize uma tabela na terceira forma normal e acesse as informações desta ta
   
   ⚠ Atenção ⚠ Caso opte por utilizar o Docker, **TODOS** os comandos disponíveis no `package.json` (npm start, npm test, npm run dev, ...) devem ser executados **DENTRO** do container, ou seja, no terminal que aparece após a execução do comando `docker exec` citado acima. 
 
-  ⚠ Atenção ⚠ O **git** dentro do container não vem configurado com suas credenciais. Ou faça os commits fora do container, ou configure as suas credenciais do git dentro do container.
-
-  ⚠ Atenção ⚠ Não rode o comando npm audit fix! Ele atualiza várias dependências do projeto, e essa atualização gera conflitos com o avaliador.
-
-
-✨ **Dica:** A extensão `Remote - Containers` (que estará na seção de extensões recomendadas do VS Code) é indicada para que você possa desenvolver sua aplicação no container Docker direto no VS Code, como você faz com seus arquivos locais.
-
-<img src="images/remote-container.png" width="800px" >
-
 ---
   
-  ## Sem Docker
-  
+  ## Sem Docker  
   
   > Instale as dependências [**Caso existam**] com `npm install`
   
@@ -84,107 +43,16 @@ Normalize uma tabela na terceira forma normal e acesse as informações desta ta
 
 
 <details>
-  <summary><strong>‼️ Antes de começar a desenvolver</strong></summary><br />
+  <summary><strong>‼️ Para acessar o projeto na sua máquina</strong></summary><br />
 
 1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-018-a-mysql-one-for-all.git`.
+  * `git clone git@github.com:ACarlosMachado/projeto-one-for-all.git`.
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd sd-018-a-mysql-one-for-all`
 
 2. Instale as dependências
   * `npm install`
 
-3. Crie uma branch a partir da branch `master`
-  * Verifique que você está na branch `master`
-    * Exemplo: `git branch`
-  * Se não estiver, mude para a branch `master`
-    * Exemplo: `git checkout master`
-  * Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
-    * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    * Exemplo: `git checkout -b seunome-mysql-one-for-all`
-
-4. Para cada exercício você deve criar um novo arquivo sql seguindo a seguinte estrutura:
-  * desafio1.sql, desafio2.sql, desafio3.sql, desafio4.sql, ..., desafioN.sql
-
-5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
-  * Verifique que as mudanças ainda não estão no _stage_
-    * Exemplo: `git status` (deve aparecer o arquivo que você alterou como desafio1.sql)
-  * Adicione o novo arquivo ao _stage_ do Git
-      * Exemplo:
-        * `git add .` (adicionando solução para desafio 1)
-        * `git status` (deve aparecer listado o arquivo _desafio1.sql_ em verde)
-  * Faça o `commit` inicial
-      * Exemplo:
-        * `git commit -m 'iniciando o projeto MySQL One For All'` (fazendo o primeiro commit)
-        * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
-
-</details>
-
-<details>
-  <summary><strong>⌨️ Durante o desenvolvimento</strong></summary><br />
-
-* Faça `commits` das alterações que você fizer no código regularmente
-
-* Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
-
-* Os comandos que você utilizará com mais frequência são:
-  1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
-  2. `git add` _(para adicionar arquivos ao stage do Git)_
-  3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-  4. `git push -u origin nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-  5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
-
-</details>
-
-<details>
-  <summary><strong>🤝 Depois de terminar o desenvolvimento (opcional)</strong></summary><br />
-
-  Para **"entregar"** seu projeto, siga os passos a seguir:
-
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`
-
-Se ainda houver alguma dúvida sobre como entregar seu projeto [aqui tem um video explicativo](https://vimeo.com/362189205).
-
-</details>
-
-<details>
-  <summary><strong>🕵🏿 Revisando um pull request</strong></summary><br />
-
-  Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
-
-</details>
-
-<details>
-  <summary><strong>📌 Como desenvolver</strong></summary><br />
-
-Para cada desafio, crie um arquivo SQL e inclua sua solução nele.
-
-1. Leia a pergunta e crie um arquivo **na pasta raiz do projeto** chamado `desafioN.sql`, em que N é o número do desafio (exemplo: desafio3.sql). Para o [primeiro desafio](#desafio-1), é preciso criar também o arquivo de configurações `desafio1.json` *também na pasta raiz do projeto*.
-
-2. O arquivo deve conter apenas o código SQL do desafio resolvido. **Não se esqueça de incluir o ponto e vírgula (";")** no final de suas queries e também de **colocar o nome do banco_de_dados.tabela por completo**, como no exemplo a seguir:
-```sql
-SELECT * FROM SpotifyClone.artista;
-```
-
-
-⚠️ **AVISO IMPORTANTE:** sempre seguir esse padrão e não utilizar a linha abaixo nos arquivos `desafionN.sql`,
-
-```sql
-USE SpotifyClone;
-```
-
-3. Atente-se a detalhes de digitação em seu código. Qualquer diferença em nomes, apelidos, ou CAIXA ALTA e caixa baixa podem invalidar suas respostas.
-
-4. Faça isso até finalizar todos os desafios e depois siga as instruções de como entregar o projeto em [**Instruções para entregar seu projeto**](#instruções-para-entregar-seu-projeto)
-
-5. Para entregar o seu projeto você deverá criar um _Pull Request_ neste repositório. Este _Pull Request_ deverá conter tanto o arquivo de configurações `desafio1.json` do [primeiro desafio](#desafio-1) quanto os arquivos `desafio1.sql`, `desafio2.sql` e assim por diante até o `desafio11.sql`, que conterão seu código `SQL` de cada desafio, respectivamente.
-
-## ⚠️ É importante que seus arquivos tenham exatamente estes nomes! ⚠️
-
-Qualquer dúvida, procure a monitoria. Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://course.betrybe.com/intro/git/) sempre que precisar!
 
 </details>
 
@@ -200,20 +68,11 @@ Você receberá uma tabela não normalizada semelhante ao que poderia ser uma ve
 
 **Aviso:** Todos os dados da tabela abaixo são fictícios e foram gerados aleatoriamente através de ferramentas com o intuito de deixar o projeto mais real para vocês 😉. Quaisquer similaridades com informações reais são meras coincidências.
 
-**Observação:** O banco de dados real do Spotify é muito mais completo e complexo que o mostrado abaixo. No entanto, use APENAS as informações passadas e solicitadas aqui. Não crie dados que não foram solicitados.
-
 ## Normalize as tabelas para a 3ª Forma Normal
-
-Abaixo você pode visualizar e baixar uma planilha com as tabelas que deverão ser normalizadas:
-
-![Tabela não normalizada "Spotify Clone"](./images/non-normalized-tables.png)
-[Faça o download dela aqui](./SpotifyClone-Non-NormalizedTable.xlsx)
 
 Antes de tudo, você deverá modelar e normalizar essas tabelas para a 3° Forma Normal. Monte quantas planilhas e tabelas forem necessárias para criar essa versão normalizada desde que você siga as regras de negócio. Não é necessário criar o código SQL neste momento.
 
 **Embora não seja necessário, é recomendado que você crie suas planilhas na sequência 1ª -> 2ª -> 3ª Forma Normal**.
-
-Caso haja dúvidas, consulte o material já passado até hoje para te auxiliar.
 
 Seu banco de dados deve seguir as regras de negócio e ser capaz de recuperar:
 
@@ -238,100 +97,7 @@ Seu banco de dados deve seguir as regras de negócio e ser capaz de recuperar:
 
 </details>
 
-<details>
-  <summary><strong>🧑‍💻 Implementações técnicas</strong></summary><br />
-
-Algumas coisas devem seguir um padrão pré-estabelecido para que os testes de correção funcionem adequadamente:
-
-1. Ao modelar o banco de dados no [desafio 1](#desafio-1):
-
-  * Quando for preciso que uma `coluna_a` referencie uma coluna `coluna_b` em outra tabela, é **necessário** que na `coluna_a` haja restrição de foreign key e que `coluna_b` seja uma primary key;
-
-2. **Todos** os desafios que pedirem para criar uma query **devem** possuir no seu arquivo `.sql` correspondente **somente** a query solicitada.
-
-3. Para executar localmente os testes é preciso escrever o seguinte no seu terminal:
-    ```sh
-    MYSQL_USER=<SEU_NOME_DE_PESSOA_USUARIA> MYSQL_PASSWORD=<SUA SENHA> HOSTNAME=<NOME_DO_HOST> PORT=<PORTA> npm test
-    ```
-
-  * Ou seja, suponha que para poder acessar a base de dados feita neste projeto você tenha `root` como seu nome de pessoa usuária, `password` como senha, `localhost` como host e `1337` como porta. Logo, você executaria:
-    ```sh
-    MYSQL_USER=root MYSQL_PASSWORD=password HOSTNAME=localhost PORT=1337 npm test
-    ```
-
-  * Usando o exemplo anterior de base, suponha que você não tenha setado uma senha para `root` e esteja usando a porta padrão (3306). Neste caso, você executaria:
-    ```sh
-    MYSQL_USER=root MYSQL_PASSWORD= HOSTNAME=localhost PORT= npm test
-    ```
-
-**Dica**: variáveis de ambiente definidas na mesma linha do comando valem apenas para aquele comando. Se preferir, você pode exportar as variáveis de ambiente para toda a _sessão_ (todos os comandos até você fechar aquele terminal). Por exemplo:
-
-```sh
-export MYSQL_USER=root MYSQL_PASSWORD=password HOSTNAME=localhost PORT=3306
-```
-
-E depois disso você só precisa rodar `npm test` quando for testar os projetos.
-
-⚠️ **Dica**: O avaliador espera que a versão do  MySQL seja a 5.7. Em caso de erro nos testes, verifique se essa é a versão que está sendo usada por você.⚠️
-
-⚠️ **Dica**: Caso queira utilizar _Docker_ para rodar os testes localmente, basta executar o comando: ⚠️
-
-```sh
-docker run -p 3306:3306 --name mysql_57 -e MYSQL_ROOT_PASSWORD=1234 -d mysql:5.7 mysqld --default-authentication-plugin=mysql_native_password
-```
-
-<details close>
-  <summary>O que está sendo feito</summary>
-  <br>
-   > :point_right: ideia geral:
-  - Baixa e executa uma imagem _docker_ do MySQL na versão 5.7.
-
-  > :point_right: flag --name:
-  - Define um nome para o nosso _container_: "meu-mysql-5_7".
-
-  > :point_right: flag -e:
-  - Define a variável de ambiente "MYSQL_ROOT_PASSWORD" com o valor "1234".
-
-  > :point_right: flag -d:
-  - Define que o container rode em segundo plano.
-
-  > :point_right: flag -p:
-  - Mapeia uma porta local a uma porta do _container_.
-
-  > :point_right: mysql:5.7:
-  - Define qual versão da imagem  mySQL queremos, no caso, a 5.7, que é a esperada pelo avaliador.
-</details>
-
-Utilizando o comando acima, para executar os testes localmente basta digitar no terminal:
-
-```sh
-MYSQL_USER=root MYSQL_PASSWORD=1234 HOSTNAME=localhost npm test
-```
-
-  </details>
-
-  <details>
-  <summary><strong>🗣 Nos dê feedbacks sobre o projeto!</strong></summary><br />
-
-Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário.
-**Leva menos de 3 minutos!**
-
-[FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
-
-:warning: **O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?**
-
-</details>
-
-<details>
-  <summary><strong>🗂 Compartilhe seu portfólio!</strong></summary><br />
-
-  Você sabia que o LinkedIn é a principal rede social profissional e compartilhar o seu aprendizado lá é muito importante para quem deseja construir uma carreira de sucesso? Compartilhe esse projeto no seu LinkedIn, marque o perfil da Trybe (@trybe) e mostre para a sua rede toda a sua evolução.
-
-</details>
-
 # Requisitos do projeto
-
-⚠️ **AVISO IMPORTANTE:** Você deve escrever sua query manualmente, com o gerador automático de queries do Workbench o avaliador não funcionará corretamente!
 
 ## Desafio 1
 
